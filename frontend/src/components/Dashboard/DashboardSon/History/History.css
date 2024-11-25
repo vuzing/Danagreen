@@ -1,0 +1,112 @@
+/* History.css */
+.trash-history-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  background-image: url('../../../../assets/main_bg.jpg');
+}
+
+.trash-history-container h2{
+  padding-bottom: 10px;
+}
+
+.trash-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+}
+
+.trash-history-table th, .trash-history-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.trash-history-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  border-bottom: 1px solid #555;
+}
+
+.trash-history-table tr {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: palegreen;
+}
+
+.trash-history-table tr:hover {
+  background-color: #e0f7fa;
+}
+
+.trash-history-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trash-history-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.trash-history-details p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.trash-history-details strong {
+  color: #333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: #45a049;
+}
+
+.pagination button:hover {
+  background-color: #3e8e41;
+}
+
+.button-backkk {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.button-backkk:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,76 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Căn giữa các phần tử */
+}
+
+.program {
+    flex-basis: 31%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Căn giữa hình ảnh bên trong */
+    position: relative;
+}
+
+.program img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    max-width: 300px;
+}
+
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.caption img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
+/* --------- Media Query cho màn hình nhỏ hơn --------- */
+
+@media (max-width: 650px){
+    .programs{
+        flex-direction: column; /* Xếp theo cột khi màn hình nhỏ */
+    }
+    .program{
+        flex-basis: 100%; /* Chiếm toàn bộ chiều ngang */
+        margin: 20px auto; /* Căn giữa phần tử và thêm khoảng cách giữa các chương trình */
+    }
+}
+
+@media (max-width: 450px) {
+    .program {
+        flex-basis: 100%;
+        margin: 8px auto; /* Đảm bảo margin tự động để căn giữa */
+    }
+    .program img {
+        width: 100%;
+        margin: 0 auto; /* Đảm bảo ảnh được căn giữa */
+    }
+}
