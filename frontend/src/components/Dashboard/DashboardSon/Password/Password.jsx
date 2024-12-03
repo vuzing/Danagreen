@@ -37,10 +37,6 @@ const Password = () => {
       <h2 className='form-title'>Đổi mật khẩu</h2>
       <form onSubmit={handleUpdatePassword} className='profilee-form'>
         <div className='input-pass'>
-          <input type='text' value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Số điện thoại' />
-          <i className="material-symbols-rounded">call</i>
-        </div>
-        <div className='input-pass'>
           <input type='password' value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} placeholder='Mật khẩu hiện tại' />
           <i className="material-symbols-rounded">Passkey</i>
         </div>
